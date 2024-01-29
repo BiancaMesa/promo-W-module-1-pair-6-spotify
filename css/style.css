@@ -1,5 +1,5 @@
 *{
-    max-width: 480px;
+    /* max-width: 480px; */
     font-family: 'Roboto', sans-serif;
     /* display: flex; */
     /* flex-direction: column;
@@ -15,6 +15,11 @@ header{
     top: 0;
 }
 
+.icon_burguer{
+    max-height: 50px;
+
+}
+
 h1{
     color: white;
     font-size: 42px;
@@ -28,7 +33,12 @@ h4{
     background-color: lightskyblue;
     height: 500px;
     padding: 100px 20px 20px 20px;
+    display: flex;
 
+}
+
+.dancer_img{
+    display: none;
 }
 
 .section-2 {
@@ -59,3 +69,41 @@ h4{
 footer{
     background-color: black;
 }
+
+.nav{
+    display:none;
+    
+}
+
+
+@media screen and (min-width: 736px) {
+    .icon_burguer{
+        display:none;
+    }
+
+    .nav{
+        display: flex; 
+    }
+
+    .listado_nav{
+        display: flex;
+        flex-direction: row;
+        color: white;
+        list-style: none;
+        margin: auto;
+        gap:10px;
+        margin-right: 50px;
+    }
+
+    .dancer_img{
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+    }
+    
+}
+
+
+/* @media screen and (min-width: 1000px) {
+    
+} */
