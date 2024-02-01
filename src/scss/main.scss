@@ -1,3 +1,13 @@
+// @import 'core/variables';
+// @import 'core/reset';
+// @import 'components/code';
+// @import 'components/links';
+// @import 'layout/page';
+// @import 'layout/header';
+// @import 'layout/footer';
+// @import 'pages/index';
+
+
 *{
     /* max-width: 480px; */
     font-family: 'Roboto', sans-serif;
@@ -41,10 +51,10 @@ h4{
     display: none;
 }
 
-.section-2 {
-    /* position: relative;
-    margin: auto; */
-}
+// .section-2 {
+//     position: relative;
+//     margin: auto;
+// }
 
 
 .benefit {
