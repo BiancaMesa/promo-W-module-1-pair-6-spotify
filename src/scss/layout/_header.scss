@@ -1,5 +1,35 @@
-.page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+
+
+header {
+    background-color: black;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+
+    &__burger {
+        max-height: 50px;
+        @media screen and (min-width: 736px) {
+                display:none;
+        }
+    }
+
+    &__nav {
+        @media screen and (min-width: 736px) {
+            display:flex;
+        }
+
+        &--list {
+            @media screen and (min-width: 736px) {
+                display: flex;
+                flex-direction: row;
+                color: white;
+                list-style: none;
+                margin: auto;
+                gap:10px;
+                margin-right: 50px;
+            }
+        }
+    }
 }

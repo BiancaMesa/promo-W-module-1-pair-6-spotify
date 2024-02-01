@@ -1,0 +1,23 @@
+h1{
+    color: white;
+    font-size: 42px;
+
+}
+
+.section-1{
+    background-color: $color-bg-hero;
+    height: 500px;
+    padding: 100px 20px 20px 20px;
+    display: flex;
+
+}
+
+.dancer_img{
+    display: none;
+
+    @media screen and (min-width: 736px) {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+    }
+}
