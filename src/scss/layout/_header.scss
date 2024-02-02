@@ -7,9 +7,10 @@ header {
     justify-content: space-between;
     position: sticky;
     top: 0;
+    
 
     &__burger {
-        max-height: 50px;
+        max-height: 30px;
         @media screen and (min-width: 736px) {
                 display:none;
         }
@@ -21,6 +22,7 @@ header {
         }
 
         &--list {
+            // display: none;
             @media screen and (min-width: 736px) {
                 display: flex;
                 flex-direction: row;
