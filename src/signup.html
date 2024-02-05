@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./scss/main.scss">
+</head>
+<body class="container">
+    <form action="https://dev.adalab.es/api/form" method="GET">
+    <h4>Registrarte con tu correo electrónico</h4>
+
+    <!-- FORMULARIO -->
+    <fieldset class="personal-data"> 
+        <!-- Email -->
+        <label for="email">¿Cuál es tu correo electrónico?</label>
+        <input type="email" name="email" id="email" placeholder="Pon tu correo electrónico.">
+
+        <!-- Confirmar email -->
+        <label for="confirm-email">Confirma el correo electrónico</label>
+        <input type="email" name="confirm-email" id="confirm-email" placeholder="Vuelve a poner tu correo electrónico.">
+
+        <!--  Contraseña -->
+        <label for="password">Crea una contraseña</label>
+        <input type="password" name="password" id="password" placeholder="Crea una contraseña.">
+
+        <!-- Name -->
+        <label for="name">¿Cómo quieres que te llamemos?</label>
+        <input type="text" name="name" id="name" placeholder="Pon un nombre de perfil.">
+        <p>Esto aparece en tu perfil</p> 
+    </fieldset> 
+
+    <fieldset>
+        <!-- FECHA NACIMIENTO -->
+        <!-- Día -->
+        <label for="day">Día</label>
+        <input type="number" name="day" id="day" placeholder="DD">
+        <!-- Mes -->
+        <label for="month">Mes</label>
+        <select name="month" id="month">
+            <option value="">Mes</option>
+            <option value="Enero">Enero</option>
+            <option value="Febrero">Febrero</option>
+            <option value="Marzo">Marzo</option>
+            <option value="Abril">Abril</option>
+            <option value="Mayo">Mayo</option>
+            <option value="Junio">Junio</option>
+            <option value="Julio">Julio</option>
+            <option value="Agosto">Agosto</option>
+            <option value="Septiembre">Septiembre</option>
+            <option value="Octubre">Octubre</option>
+            <option value="Noviembre">Noviembre</option>
+            <option value="Diciembre">Diciembre</option>
+        </select>
+        <!-- Año -->
+        <label for="year">Año</label>
+        <input type="number" name="year" id="year" placeholder="AAAA">
+
+        <!-- GENDER -->
+        <h4>¿Cuál es tu género?</h4>
+
+        <!-- Man -->
+        <label for="man">Hombre</label>
+        <input type="radio" name="gender" id="man" value="man">
+
+        <!-- Woman -->
+        <label for="woman">Mujer</label>
+        <input type="radio" name="gender" id="woman" value="woman">
+
+        <!-- Non-binary -->
+        <label for="non-binary">No binario</label>
+        <input type="radio" name="gender" id="non-binary" value="non-binary">
+    </fieldset> 
+
+    <!-- CHECKBOXS -->
+    <fieldset class="checkbox">
+        <!-- Novedades -->
+        <label for="news-and-offers">Quiero que me enviéis novedades y ofertas de Spotify</label>
+        <input type="checkbox" name="news-and-offers" id="news-and-offers">
+
+        <!-- Compartir datos -->
+        <label for="share-data">Compartir mis datos de registro con los proveedores de contenidos de Spotify para fines de marketing. Ten en cuenta que tus datos pueden ser transferidos a un país de fuera de EEE, tal y como se recoge en nuestra Política de Privacidad.</label>
+        <input type="checkbox" name="share-data" id="share-data">
+    </fieldset>
+
+    <!-- Registrate -->
+    <button type="submit">Registrarte</button>
+    </form>
+</body>
+</html>
